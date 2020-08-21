@@ -8,13 +8,50 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background: url(https://images.pexels.com/photos/54098/us-army-soldiers-army-men-54098.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-size: cover;
+      }
+      .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .heading {
+        margin-top: 200px;
+        color: white;
+      }
+      #play {
+        width: 100%;
+        background: none;
+        border: 2px solid #4caf50;
+        color: white;
+        padding: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        margin: 12px 0;
+      }
+      #play:hover {
+        background: #4caf50;
+        color: black;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
       <div class="heading">
-        <h1>BATTLESHIP <br />MINESWEEPER</h1>
+        <h1 style="font-size: 50px; font-family: 'Roboto Mono', monospace;">
+          MINESWEEPER
+        </h1>
       </div>
-      <a href="levels.html"><button>PLAY</button></a>
+      <a id="play" type="button" class="btn btn-success" href="levels.html"
+        >PLAY</a
+      >
     </div>
   </body>
 </html>
